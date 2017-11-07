@@ -1,5 +1,8 @@
 # WGISS Tech Webinar - Python for Data Science in Earth Observation Analysis
 
+Click on *launch* to visit the live version of this notebook!
+[![Binder](https://mybinder.org/badge.svg)](https://mybinder.org/v2/gh/e-sensing/wgiss-py-webinar/master)
+
 
 ## Setup in Mac OS X
 
