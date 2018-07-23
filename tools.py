@@ -9,14 +9,13 @@ import json
 def wtss_get_time_series(samples, url_server, cov_name):
     
     # get wtss object
-    w = wtss(url_server) # w = wtss("http://www.esensing.dpi.inpe.br")
+    w = wtss(url_server)
     # get time series for each sample
     # create an empty data frame to store all time series
     data = pd.DataFrame()
     # traverse points, get data from wtss server and stores it
     for i in range(len(samples)):
         # request wtss
-        # ts = w.time_series("mod13q1_512", ("ndvi", "evi"), 
         ts = w.time_series(cov_name, ("ndvi", "evi"), 
                            latitude=samples["latitude"][i], 
                            longitude=samples["longitude"][i], 
